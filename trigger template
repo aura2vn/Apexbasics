@@ -1,0 +1,13 @@
+// trigger pattern
+
+
+trigger <<Name>> on <<Object>> (<<after/before>> <<event>>) {
+    for (<<Object>> <<VariableName>>:Trigger.New){
+        // Create an Object (optional), see below
+        <<2ndObject>> <<2ndObjVar>> = new <<2ndObject>>();
+        // Update Record either on the newly created object or the one the trigger is on
+        <<VariableName>>.<<FieldName>>    = 'Dedupe this account';
+        // Explicit Save (optional)
+        insert cc;
+    }
+}
