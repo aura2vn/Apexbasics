@@ -1,0 +1,14 @@
+// test pattern
+
+
+@isTest
+private class <<TriggerNameTest>> {
+	@isTest static void test_method_one() {
+        //implement test code        
+	}
+  
+	@isTest static void test_method_two() {
+        //implement test code        
+	}
+    
+}
